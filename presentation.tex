@@ -1,0 +1,299 @@
+\documentclass{beamer}
+ 
+
+% ===========================================================
+% Setup
+\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{subfig}
+\usepackage{amssymb,enumerate,tikz, tkz-berge}
+\usetikzlibrary{automata, positioning}
+%\usepackage{sgame}
+\usepackage{sgamevar}
+
+
+% ===========================================================
+% Customization
+\newcommand{\eq}[1]{\underline{#1}}
+\usepackage{lmodern}
+%\usefonttheme[onlymath]{serif}
+\usefonttheme{professionalfonts}
+\usetheme{boxes}
+\usecolortheme{orchid}
+\definecolor{eth}{rgb}{0.1215686275,0.2509803922,0.4784313725}
+\definecolor{eth2}{rgb}{0.2352941176, 0.3529411765, 0.05882352941}
+\definecolor{eth3}{rgb}{0, 0.4117647059, 0.7058823529}
+\definecolor{eth7}{rgb}{0.6588235294, 0.1960784314, 0.1764705882}
+\definecolor{eth9}{rgb}{0.5843137255, 0.3764705882, 0.07450980392}
+\definecolor{eth10}{rgb}{0.5098039216, 0.7450980392, 0.1176470588}
+\colorlet{beamer@blendedblue}{eth}
+\setcounter{tocdepth}{1}
+\setbeamercolor*{block title}{fg=white, bg=eth2}
+\setbeamercolor*{block title alert}{fg=white, bg=eth7}
+\setbeamercolor*{block title alertblock}{fg=white, bg=eth7}
+\setbeamercolor*{block title example}{fg=white, bg=eth3}
+\setbeamercolor*{block title exampleblock}{fg=white, bg=eth3}
+\addtobeamertemplate{proof begin}{\setbeamercolor{block title}{fg=white, bg=eth9}}{}
+ 
+ 
+% ===========================================================
+% Presentation Metadata
+\title{Stochastic Uncoupled Dynamics\\and Nash Equilibrium}
+%\subtitle{Sergiu Hart, Andreu Mas-Colell}
+\author{Daniel Balle}
+\institute{ETH Z\"{u}rich}
+\date{May 2017}
+\logo{\includegraphics[width=12.8mm]{eth_logo_kurz_pos_13.pdf}\hspace{6pt}}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+ 
+  
+% ===========================================================
+\begin{document}
+\beamertemplatenavigationsymbolsempty
+ 
+\frame{\titlepage}
+ 
+\section{Introduction}
+
+\begin{frame}
+    \frametitle{Introduction}
+	\begin{definition}[Uncoupledness]
+        A dynamic process in a game is called \textbf{uncoupled}
+        if the strategy of each player does not depend on the
+        utility/payoff function of other players.
+    \end{definition}
+    \pause
+    \begin{alertblock}{Hart and Mas-Colell '03}
+%        There are games with unique Nash equilibria for which \textbf{no}
+%        deterministic uncoupled dynamics leads to a Nash Equilibrium.
+        There are no deterministic uncoupled stationary dynamics that guarantee almost sure
+        convergence to pure Nash equilibria in all games where such equilibria exist.
+    \end{alertblock}
+\end{frame}
+    
+\begin{frame}
+    \frametitle{The Bad News}
+    \framesubtitle{Proof}
+    \vspace{-20pt}
+    \begin{figure}[h]
+    \centering
+    \begin{game}{3}{3}
+            \>  $\alpha$ \>  $\beta$  \> $\gamma$ \\
+         $\alpha$    \>  $1, 0$ \> $0, 1$ \> $1,0$\\
+         $\beta$      \>  $0, 1$ \> $1, 0$ \> $1, 0$\\
+         $\gamma$ \>  $0, 1$ \> $0, 1$ \> $1, 1$\\
+    \end{game}
+    \caption{A simple two-player game $U$}
+    \end{figure}
+    \vspace{-10pt}
+    \begin{exampleblock}{Observation}
+        In each action combination $a(t)$ at least one of the two players is best-replying.
+    \end{exampleblock}
+    \pause
+    \begin{lemma}
+        If player $i$ is best-replying in state $a(t)$ he will play the same move at $t+1$
+    \end{lemma}
+\end{frame}
+
+\begin{frame}
+    \frametitle{The Bad News}
+    \framesubtitle{Proof}
+    \vspace{-20pt}
+    \begin{figure}[h]
+    \centering
+    \begin{game}{3}{3}
+            \>  $\alpha$ \>  $\beta$  \> $\gamma$ \\
+         $\alpha$    \> {\color{eth7}$1, \mathbf{2}$} \> $0, 1$ \> $1,0$\\
+         $\beta$      \>  $0, 1$ \> $1, 0$ \> $1, 0$\\
+         $\gamma$ \>  $0, 1$ \> $0, 1$ \> {\color{eth7}$1, \mathbf{0}$}\\
+    \end{game}
+    \caption{Another two-player game $U'$}
+    \label{fig:example1}
+    \end{figure}
+    \vspace{-10pt}
+    \begin{overprint}
+        \onslide<1>
+        \begin{proof}[\proofname\ 1/2]
+            \let\qed\relax
+            \begin{itemize}
+                \item Pick $a(t)$ where player 1 is best-replying
+                \item Create a new game $U' = (u^1, \bar{u}^2)$ such that $a(t)$
+                    becomes the unique Nash equilibria
+            \end{itemize}
+        \end{proof}
+        \onslide<2>
+        \begin{proof}[\proofname\ 2/2]
+            %\let\qed\relax
+            \begin{itemize}
+                \item The strategy mapping $f$ converges and is 1-recall and thus
+                    neither player will move from $a(t)$ at $t+1$
+                \item Yet by uncoupledness $f^1(U) = f^1(U')$
+            \end{itemize}
+        \end{proof}
+    \end{overprint}
+%
+%	Since our strategy mapping converges and is 1-recall neither player will choose
+%	a different action at time $t+1$. Yet by uncoupledness the strategy of player 1 is
+%	independent of the utility function of player 2, and thus he will not move in the
+%	original game $U$ either.
+\end{frame}
+
+\begin{frame}
+    \frametitle{The Bad News}
+    \framesubtitle{Proof}
+    \vspace{-20pt}
+    \begin{figure}[h]
+    \centering
+    \begin{game}{3}{3}
+            \>  $\alpha$ \>  $\beta$  \> $\gamma$ \\
+         $\alpha$    \>  $1, 0$ \> $0, 1$ \> $1,0$\\
+         $\beta$      \>  $0, 1$ \> $1, 0$ \> $1, 0$\\
+         $\gamma$ \>  $0, 1$ \> $0, 1$ \> $1, 1$\\
+    \end{game}
+    \caption{The initial two-player game $U$}
+    \end{figure}
+    \vspace{-10pt}
+    \begin{exampleblock}{Observation 2}
+        In any action combination $a(t)$ in which only player $i$ plays $\gamma$, player
+        $i$ is not best-replying and thus player $j$ is.
+    \end{exampleblock}
+    \pause
+    \begin{proof}[Conclusion]
+        It follows that the state $(\gamma, \gamma)$ can
+        never be reached when starting from any other state.
+    \end{proof}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Introduction}
+    \begin{center}
+        What if players could remember previous plays?\\
+        What if they had memories?
+    \end{center}
+\end{frame}
+
+\section{Models \& Concepts}
+\subsection{Static Setup}
+
+\begin{frame}
+    \frametitle{Static Setup}
+    \framesubtitle{you already know this}
+	\begin{definition}[Static game]
+		\begin{itemize}
+			\item $N \geq 2$ players denoted by $i \in \{1, 2, ..., N\}$
+			\item A finite set of actions $A^i$ for each player $i$
+			\item The set of action combinations $A := A^1 \times A^2 \times ... \times A^N$
+			\item A payoff (or utility) function $u^i : A \to \mathbb{R}$ for each
+				player $i$
+		\end{itemize}
+		We then identify a game by its payoff functions $U := (u^1, ..., u^N)$.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Static Setup}
+    \framesubtitle{you already know this}
+	\begin{definition}[randomized or mixed actions]
+		Player $i$ assigns a
+		probability $x^i(a)$ to each action $a \in A^i$.
+		\begin{itemize}
+			\item The set of all mixed actions for player $i$ is $\Delta(A^i)$
+			\item We denote by $\Delta := \Delta(A^1) \times ... \times \Delta(A^N)$
+				the set of randomized action combinations or $N$-tuples.
+			\item The payoff function is multi-linearly extended to $u^i : \Delta \to \mathbb{R}$
+		\end{itemize}
+	\end{definition}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Nash Equilibria}
+    \framesubtitle{should also look familiar}
+	\begin{definition}[best replying]
+		We say that the randomized actions $x^i \in \Delta(A^i)$ is an \emph{$\epsilon$-best reply}
+		to $x^{-i} := (x^1, ..., x^{i-1}, x^{i+1}, ..., x^N)$ if for all $y^i \in \Delta(A^i)$:
+		\[
+			u^i(x) \geq u^i(y^i, x^{-i}) - \epsilon
+		\]
+	\end{definition}
+    \pause % maybe not?
+	\begin{definition}[Nash $\epsilon$-equilibrium]
+		A \emph{Nash $\epsilon$-equilibrium} is a randomized action combination $\eq{x} =
+		(\eq{x}^1, ..., \eq{x}^N) \in \Delta$ such that each $\eq{x}^i$ is an $\epsilon$-best reply
+		to $\eq{x}^{-i}$.
+	\end{definition}
+\end{frame}
+
+\subsection{Dynamic Setup \& History of Play}
+
+\begin{frame}
+    \frametitle{Dynamic Setup}
+    \begin{definition}[History of Play]
+        For repeated play of $U$ at discrete time periods $t = 1, 2, ...$
+        \begin{itemize}
+            \item $a^i(t) \in A^i$ the action of player $i$ at time $t$
+            \item $a(t) = (a^1(t), ..., a^N(t)) \in A$ the action combination at $t$
+            \item $(a(1), ..., a(t-1)) \in H$ the history of play
+        \end{itemize}
+    \end{definition}
+    \pause
+    \begin{definition}[Strategies]
+        \begin{itemize}
+            \item $f^i : H \to \Delta(A^i)$ the \textbf{stationary} strategy of player $i$
+            \item $f(U) = (f^1(u^1), ..., f^N(u^n))$ the \textbf{uncoupled} strategy mapping for $U$
+        \end{itemize}
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Recall}
+    \framesubtitle{Influence from the past}
+    \begin{definition}
+        A strategy has $R$\textbf{-recall} if only the last $R$ action combinations matter,
+        i.e. $f^i$ is of the form $f^i(a(t-R), ..., a(t-1))$ for all $t > R$.
+    \end{definition}
+%
+%    \medskip
+%    Recall limits the information
+%    player may use to decide on their next move to a finite number of play periods
+%    immediately preceding the current time period.
+\end{frame}
+
+\section{Pure Equilibria}
+\subsection{The Bad News}
+
+
+\subsection{Not All Is Lost}
+
+\begin{frame}
+    \frametitle{Recall to the Rescue}
+    \begin{theorem}
+        There exist uncoupled, 2-recall, stationary strategy mappings that
+        guarantee almost sure convergence to
+        pure Nash equilibria  in every game where such equilibria exist.
+    \end{theorem}
+\end{frame}
+
+% Use less boxes maybe?
+
+
+\section{Mixed Equilibria}
+\subsection{Distributions of Play}
+\subsection{Convergence of Marginal Distributions}
+\subsection{Convergence of Joint Distributions}
+
+\section{Behavior Probabilities}
+
+\section{Memory}
+
+\section{Closing}
+ 
+\end{document}

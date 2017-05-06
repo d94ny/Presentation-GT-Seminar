@@ -372,7 +372,7 @@
             \end{game}
 		}
 		\qquad\qquad\qquad
-        \subfloat[$U' = (u^1, \bar{u}^2$)]{
+        \subfloat[$U' = (u^1, \bar{u}^2)$]{
 		    \begin{game}{2}{2}
     	 				\>  $\alpha$ \>  $\beta$ \\
     			$\alpha$    \>  $1, 1$ \> $0, 0$\\
@@ -394,8 +394,8 @@
             \begin{itemize}
                 \item<3-> $f$ assigns $x^i(\alpha) > 0$ in both $U$ and $U'$
                 \item<4-> We eventually reach the state $s = (\eq{a}, ..., \eq{a})$ in both games
-                \item<5-> $f^1(s)(\alpha)$ should then be close to the unique Nash Equilibrium
-                \item<6 | alert@6> Contradicts uncoupledness!
+                \item<5-> $f^1(s)$ should then be close to the unique Nash Equilibrium
+                \item<6 | alert@6> Contradicts uncoupledness since $f^1(U;s) = f^1(U';s)$
             \end{itemize}
         \end{proof}}
     \end{overlayarea}
@@ -434,8 +434,76 @@
     \frametitle{Proof}
     \framesubtitle{Buckle in}
 
+    \begin{exampleblock}{Construction 1/2}
+        % remove the 2 here
+        \begin{itemize}
+            \item<1-> Find some $K$ such that there is a Nash $\epsilon$-Equilibrium $y = (y^1, ..., y^N)$
+		    with all probabilities being multiples of $1/K$.
+            \item<2-> Define $f$ to have $R = 2K + 1$ memory.
+        \end{itemize}
+    \end{exampleblock}
+    % what a state is
+    \onslide<3->
     \begin{definition}
+        \begin{itemize}
+            \item<3-> The state $\tilde{s}^i$ of player $i$ are his $R$ memories
+                $(a_0, a_1, ... a_{2K})$
+            \item<4-> $s^i$ denotes his $2K$ most recent memories $(a_1, ..., a_{2K})$ 
+            \item<5- | alert@5> Here all players will have the same memories $\tilde{s}$!
+        \end{itemize}
     \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Proof}
+    \begin{definition}
+        We denote by $z^i$ the frequency distribution of actions from player $i$
+        over his $K$ most recent memories $(a_{K+1}, ..., a_{2K})$.
+    \end{definition}
+    \pause
+    \begin{example}
+        For the $K=5$ memories %$((\alpha, \beta), (\alpha, \gamma), (\gamma, \beta))$
+			$((\alpha, \alpha), (\alpha, \beta), (\beta, \gamma), (\gamma, \gamma), (\gamma, \gamma))$:
+        \begin{gather*}
+            z^1(\alpha) = 2/5, \,\,\,\, z^1(\beta) = 1/5, \,\,\,\, z^1(\gamma) = 2/5\\
+            z^2(\alpha) = 1/5, \,\,\,\, z^2(\beta) = 1/5, \,\,\,\, z^2(\gamma) = 3/5
+        \end{gather*}
+    \end{example}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Strategy $f^i$}
+    \pause
+    \begin{exampleblock}{if $\tilde{s} = (a_0, s)$ is not $K$-periodic (Mode I)}
+        \pause
+        \begin{itemize}
+            \item<3-> if $s$ is $K$-periodic and
+                
+                \begin{itemize}
+                    \item<4-> $z^i$ is a $\epsilon$-best reply to $z^{-i}$,
+                    \textbf<4>{he continues his periodic play}
+			
+			        \item<5-> otherwise, \textbf<5>{he breaks his periodic play}
+                \end{itemize}
+			
+			\item<6-> if $s$ is not $K$-periodic player $i$ picks a random action $\bar{a}^i$
+        \end{itemize}
+        \vspace{-5pt}
+        \onslide<7->
+        \textcolor{eth}{\noindent\rule{\textwidth}{0.7pt}}\\
+        The new state of $f^i$ becomes $\tilde{s}' = (a_1, ..., a_{2K}, \bar{a})$.
+    \end{exampleblock}
+    \onslide<8->
+    \begin{exampleblock}{if $\tilde{s} = (a_0, s)$ is $K$-periodic (Mode II)}
+        \onslide<9->
+        \begin{itemize}
+			\item player $i$ plays the mixed action $z^i$
+        \end{itemize}
+        \vspace{-5pt}
+        \onslide<10->
+        \textcolor{eth}{\noindent\rule{\textwidth}{0.7pt}}\\
+        The state of $f^i$ remains the same $\tilde{s}' = \tilde{s}$.
+    \end{exampleblock}
 \end{frame}
 
 \section{Closing}

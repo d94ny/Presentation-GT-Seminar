@@ -45,13 +45,13 @@
 \date{May 2017}
 \logo{\includegraphics[width=12.8mm]{eth_logo_kurz_pos_13.pdf}\hspace{6pt}}
 
-\AtBeginSection[]
-{
-  \begin{frame}
-    \frametitle{Table of Contents}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
+%\AtBeginSection[]
+%{
+%  \begin{frame}
+%    \frametitle{Table of Contents}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
  
   
 % ===========================================================
@@ -73,14 +73,14 @@
     \begin{alertblock}{Hart and Mas-Colell '03}
 %        There are games with unique Nash equilibria for which \textbf{no}
 %        deterministic uncoupled dynamics leads to a Nash Equilibrium.
-        There are no deterministic uncoupled stationary dynamics that guarantee almost sure
+        \it There are no deterministic uncoupled stationary dynamics that guarantee almost sure
         convergence to pure Nash equilibria in all games where such equilibria exist.
     \end{alertblock}
 \end{frame}
     
 \begin{frame}
-    \frametitle{The Bad News}
-    \framesubtitle{Proof}
+    \frametitle{Introduction}
+    \framesubtitle{The Bad News}
     \vspace{-20pt}
     \begin{figure}[h]
     \centering
@@ -94,17 +94,17 @@
     \end{figure}
     \vspace{-10pt}
     \begin{exampleblock}{Observation}
-        In each action combination $a(t)$ at least one of the two players is best-replying.
+        In each action combination $a$ at least one of the two players is best-replying.
     \end{exampleblock}
     \pause
     \begin{lemma}
-        If player $i$ is best-replying in state $a(t)$ he will play the same move at $t+1$
+        Under uncoupled dynamics $f$, if player $i$ is best-replying in state $a$ he will play the same move again.
     \end{lemma}
 \end{frame}
 
 \begin{frame}
-    \frametitle{The Bad News}
-    \framesubtitle{Proof}
+    \frametitle{Introduction}
+    \framesubtitle{The Bad News}
     \vspace{-20pt}
     \begin{figure}[h]
     \centering
@@ -123,8 +123,8 @@
         \begin{proof}[\proofname\ 1/2]
             \let\qed\relax
             \begin{itemize}
-                \item Pick $a(t)$ where player 1 is best-replying
-                \item Create a new game $U' = (u^1, \bar{u}^2)$ such that $a(t)$
+                \item Pick some $a$ where player 1 is best-replying
+                \item Create a new game $U' = (u^1, \bar{u}^2)$ such that $a$
                     becomes the unique Nash equilibria
             \end{itemize}
         \end{proof}
@@ -132,8 +132,8 @@
         \begin{proof}[\proofname\ 2/2]
             %\let\qed\relax
             \begin{itemize}
-                \item The strategy mapping $f$ converges and is 1-recall and thus
-                    neither player will move from $a(t)$ at $t+1$
+                \item The dynamics $f$ converge and thus
+                    neither player will move away from $a$
                 \item Yet by uncoupledness $f^1(U) = f^1(U')$
             \end{itemize}
         \end{proof}
@@ -146,8 +146,8 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{The Bad News}
-    \framesubtitle{Proof}
+    \frametitle{Introduction}
+    \framesubtitle{The Bad News}
     \vspace{-20pt}
     \begin{figure}[h]
     \centering
@@ -161,7 +161,7 @@
     \end{figure}
     \vspace{-10pt}
     \begin{exampleblock}{Observation 2}
-        In any action combination $a(t)$ in which only player $i$ plays $\gamma$, player
+        In any action combination $a$ in which only player $i$ plays $\gamma$, player
         $i$ is not best-replying and thus player $j$ is.
     \end{exampleblock}
     \pause
@@ -174,107 +174,96 @@
 
 \begin{frame}
     \frametitle{Introduction}
+    \framesubtitle{But ...}
     \begin{center}
-        What if players could remember previous plays?\\
-        What if they had memories?
+        What if players could \textbf{remember} previous plays?\\
+        What if they had \textbf{memories}?
     \end{center}
 \end{frame}
 
-\section{Models \& Concepts}
-\subsection{Static Setup}
+%\section{Models \& Concepts}
+%\subsection{Static Setup}
 
-\begin{frame}
-    \frametitle{Static Setup}
-    \framesubtitle{you already know this}
-	\begin{definition}[Static game]
-		\begin{itemize}
-			\item $N \geq 2$ players denoted by $i \in \{1, 2, ..., N\}$
-			\item A finite set of actions $A^i$ for each player $i$
-			\item The set of action combinations $A := A^1 \times A^2 \times ... \times A^N$
-			\item A payoff (or utility) function $u^i : A \to \mathbb{R}$ for each
-				player $i$
-		\end{itemize}
-		We then identify a game by its payoff functions $U := (u^1, ..., u^N)$.
-	\end{definition}
-\end{frame}
+%\begin{frame}
+%    \frametitle{Static Setup}
+%    \framesubtitle{you already know this}
+%	\begin{definition}[Static game]
+%		\begin{itemize}
+%			\item $N \geq 2$ players denoted by $i \in \{1, 2, ..., N\}$
+%			\item A finite set of actions $A^i$ for each player $i$
+%			\item The set of action combinations $A := A^1 \times A^2 \times ... \times A^N$
+%			\item A payoff (or utility) function $u^i : A \to \mathbb{R}$ for each
+%				player $i$
+%		\end{itemize}
+%		We then identify a game by its payoff functions $U := (u^1, ..., u^N)$.
+%	\end{definition}
+%\end{frame}
 
-\begin{frame}
-    \frametitle{Static Setup}
-    \framesubtitle{you already know this}
-	\begin{definition}[randomized or mixed actions]
-		Player $i$ assigns a
-		probability $x^i(a)$ to each action $a \in A^i$.
-		\begin{itemize}
-			\item The set of all mixed actions for player $i$ is $\Delta(A^i)$
-			\item We denote by $\Delta := \Delta(A^1) \times ... \times \Delta(A^N)$
-				the set of randomized action combinations or $N$-tuples.
-			\item The payoff function is multi-linearly extended to $u^i : \Delta \to \mathbb{R}$
-		\end{itemize}
-	\end{definition}
-\end{frame}
+%\begin{frame}
+%    \frametitle{Static Setup}
+%    \framesubtitle{you already know this}
+%	\begin{definition}[randomized or mixed actions]
+%		Player $i$ assigns a
+%		probability $x^i(a)$ to each action $a \in A^i$.
+%		\begin{itemize}
+%			\item The set of all mixed actions for player $i$ is $\Delta(A^i)$
+%			\item We denote by $\Delta := \Delta(A^1) \times ... \times \Delta(A^N)$
+%				the set of randomized action combinations or $N$-tuples.
+%			\item The payoff function is multi-linearly extended to $u^i : \Delta \to \mathbb{R}$
+%		\end{itemize}
+%	\end{definition}
+%\end{frame}
+
+%\begin{frame}
+%    \frametitle{Nash Equilibria}
+%    \framesubtitle{should also look familiar}
+%	\begin{definition}[best replying]
+%		We say that the randomized actions $x^i \in \Delta(A^i)$ is an \emph{$\epsilon$-best reply}
+%		to $x^{-i} := (x^1, ..., x^{i-1}, x^{i+1}, ..., x^N)$ if for all $y^i \in \Delta(A^i)$:
+%		\[
+%			u^i(x) \geq u^i(y^i, x^{-i}) - \epsilon
+%		\]
+%	\end{definition}
+%    \pause % maybe not?
+%	\begin{definition}[Nash $\epsilon$-equilibrium]
+%		A \emph{Nash $\epsilon$-equilibrium} is a randomized action combination $\eq{x} =
+%		(\eq{x}^1, ..., \eq{x}^N) \in \Delta$ such that each $\eq{x}^i$ is an $\epsilon$-best reply
+%		to $\eq{x}^{-i}$.
+%	\end{definition}
+%\end{frame}
+
+%\subsection{Dynamic Setup \& History of Play}
+
+%\begin{frame}
+%    \frametitle{Dynamic Setup}
+%    \begin{definition}[History of Play]
+%        For repeated play of $U$ at discrete time periods $t = 1, 2, ...$
+%        \begin{itemize}
+%            \item $a^i(t) \in A^i$ the action of player $i$ at time $t$
+%            \item $a(t) = (a^1(t), ..., a^N(t)) \in A$ the action combination at $t$
+%            \item $(a(1), ..., a(t-1)) \in H$ the history of play
+%        \end{itemize}
+%    \end{definition}
+%    \pause
+%    \begin{definition}[Strategies]
+%        \begin{itemize}
+%            \item $f^i : H \to \Delta(A^i)$ the \textbf{stationary} strategy of player $i$
+%            \item $f(U) = (f^1(u^1), ..., f^N(u^n))$ the \textbf{uncoupled} strategy mapping for $U$
+%        \end{itemize}
+%    \end{definition}
+%\end{frame}
 
 
-\begin{frame}
-    \frametitle{Nash Equilibria}
-    \framesubtitle{should also look familiar}
-	\begin{definition}[best replying]
-		We say that the randomized actions $x^i \in \Delta(A^i)$ is an \emph{$\epsilon$-best reply}
-		to $x^{-i} := (x^1, ..., x^{i-1}, x^{i+1}, ..., x^N)$ if for all $y^i \in \Delta(A^i)$:
-		\[
-			u^i(x) \geq u^i(y^i, x^{-i}) - \epsilon
-		\]
-	\end{definition}
-    \pause % maybe not?
-	\begin{definition}[Nash $\epsilon$-equilibrium]
-		A \emph{Nash $\epsilon$-equilibrium} is a randomized action combination $\eq{x} =
-		(\eq{x}^1, ..., \eq{x}^N) \in \Delta$ such that each $\eq{x}^i$ is an $\epsilon$-best reply
-		to $\eq{x}^{-i}$.
-	\end{definition}
-\end{frame}
-
-\subsection{Dynamic Setup \& History of Play}
-
-\begin{frame}
-    \frametitle{Dynamic Setup}
-    \begin{definition}[History of Play]
-        For repeated play of $U$ at discrete time periods $t = 1, 2, ...$
-        \begin{itemize}
-            \item $a^i(t) \in A^i$ the action of player $i$ at time $t$
-            \item $a(t) = (a^1(t), ..., a^N(t)) \in A$ the action combination at $t$
-            \item $(a(1), ..., a(t-1)) \in H$ the history of play
-        \end{itemize}
-    \end{definition}
-    \pause
-    \begin{definition}[Strategies]
-        \begin{itemize}
-            \item $f^i : H \to \Delta(A^i)$ the \textbf{stationary} strategy of player $i$
-            \item $f(U) = (f^1(u^1), ..., f^N(u^n))$ the \textbf{uncoupled} strategy mapping for $U$
-        \end{itemize}
-    \end{definition}
-\end{frame}
+\section{Recall}
 
 \begin{frame}
     \frametitle{Recall}
-    \framesubtitle{Influence from the past}
+    \framesubtitle{Influence from the Past}
     \begin{definition}
         A strategy has $R$\textbf{-recall} if only the last $R$ action combinations matter,
-        i.e. $f^i$ is of the form $f^i(a(t-R), ..., a(t-1))$ for all $t > R$.
+        i.e. $f^i$ is of the form $f^i(u^i; a(t-R), ..., a(t-1))$.
     \end{definition}
-%
-%    \medskip
-%    Recall limits the information
-%    player may use to decide on their next move to a finite number of play periods
-%    immediately preceding the current time period.
-\end{frame}
-
-\section{Pure Equilibria}
-\subsection{The Bad News}
-
-
-\subsection{Not All Is Lost}
-
-\begin{frame}
-    \frametitle{Recall to the Rescue}
+    \pause
     \begin{theorem}
         There exist uncoupled, 2-recall, stationary strategy mappings that
         guarantee almost sure convergence to
@@ -282,17 +271,172 @@
     \end{theorem}
 \end{frame}
 
-% Use less boxes maybe?
+\begin{frame}
+    \frametitle{Proof}
+    \begin{definition}[State]
+        A state is identified as the play of the two previous periods $(a', a) := (a(t-1), a(t)) \in A \times A$.
+    \end{definition}
+    \pause
+    \begin{exampleblock}{Strategy $f^i$}
+        \begin{itemize}
+            \item if $a' = a$ and $a^i$ is a best reply of player $i$ to $a^{-i}$\\
+                then player $i$ plays the same action $a^i$;
+            \item otherwise player $i$ picks an action $\bar{a}^i$ uniformly at random from $A^i$
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
 
 
-\section{Mixed Equilibria}
-\subsection{Distributions of Play}
-\subsection{Convergence of Marginal Distributions}
-\subsection{Convergence of Joint Distributions}
+\begin{frame}
+    \newcommand{\hl}{\only{\color{eth7}}}
+    \frametitle{Proof}
+    \begin{figure}[h]\hspace*{\fill}%
+    \centering%
+    \renewcommand{\gamestretch}{1.25}%
+    \begin{game}{2}{2}
+        \>$a' = a$\>$a' \neq a$\\
+         $a \in \text{PNE}$ \> {\hl<2-3>$\mathbf{S}_1$}\>{\hl<4-5>$\mathbf{S}_2$}\\
+         $a \notin \text{PNE}$\> {\hl<4,7>$\mathbf{S}_4$}\>{\hl<4,6>$\mathbf{S}_3$}
+    \end{game}\hspace*{\fill}%
+    \caption{State space $S$ partition}%
+    \label{fig:example2}%
+    \end{figure}
+    \vspace{-10pt}
+    \pause
+    \begin{overlayarea}{\textwidth}{5cm}
+        \onslide*<2-3>{
+        \begin{exampleblock}{Observation}
+            Each state in $S_1$ is absorbing.
+        \end{exampleblock}}
+        \onslide*<3>{
+        \begin{proof}[Strategy $f^i$]
+            \let\qed\relax
+            \begin{itemize}
+                \item if $a' = a$ and $a^i$ is a best reply of player $i$ to $a^{-i}$\\
+                    then player $i$ plays the same action $a^i$;
+            \end{itemize}
+        \end{proof}}
+        \onslide*<4-7>{
+        \begin{lemma}
+            For all states $s \in S_2 \cup S_3 \cup S_4$ there is a strictly positive probability $p > 0$ to
+            reach a state $s' \in S_1$ in finitely many periods. % transient state
+        \end{lemma}}
+        \onslide*<5>{
+        \begin{proof}[$S_2$]
+            \let\qed\relax
+            All players randomly pick $a^i$ again $\Rightarrow (a, a) \in S_1$
+        \end{proof}}
+        \onslide*<6>{
+        \begin{proof}[$S_3$]
+            \let\qed\relax
+            All players randomly pick some $\bar{a}^i$ s.t. $\bar{a} \in $ PNE $\Rightarrow (a, \bar{a}) \in S_2$
+        \end{proof}}
+        \onslide*<7>{
+        \begin{proof}[$S_4$]
+            \let\qed\relax
+            Some player randomly picks $\bar{a}^i \Rightarrow (a, \bar{a}) \in S_2 \cup S_3$ 
+        \end{proof}}
+        \onslide*<8>{
+        \begin{proof}[Conclusion]
+            $f$ induces an absorbing Markov Chain over $S$.
+        \end{proof}}
+    \end{overlayarea}
+\end{frame}
 
-\section{Behavior Probabilities}
+\begin{frame}
+    \frametitle{Can We Go Further? }
+    \begin{center}
+        What about \textbf{Mixed} Nash Equilibria?
+    \end{center} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Mixed Equilibira}
+    \begin{alertblock}{Theorem}
+        \it For every small enough $\epsilon > 0$, there are no uncoupled, \textbf{finite recall}, stationary strategy
+        mappings $f$ that guarantee in every game, the almost sure convergence of the behavior probabilities
+        to Nash $\epsilon$-equilibria.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Proof}
+    \setcounter{subfigure}{0}
+	\begin{figure}[h]
+	\centering
+        \subfloat[$U = (u^1, u^2)$]{
+		    \begin{game}{2}{2}
+    	 		\>  $\alpha$ \>  $\beta$ \\
+    			$\alpha$    \>  $1, 0$ \> $0, 1$\\
+    			$\beta$      \>  $0, 1$ \> $1, 0$\\
+            \end{game}
+		}
+		\qquad\qquad\qquad
+        \subfloat[$U' = (u^1, \bar{u}^2$)]{
+		    \begin{game}{2}{2}
+    	 				\>  $\alpha$ \>  $\beta$ \\
+    			$\alpha$    \>  $1, 1$ \> $0, 0$\\
+    			$\beta$      \>  $0, 1$ \> $1, 0$\\
+            \end{game}
+        }
+    \end{figure}
+    \pause
+    \begin{overlayarea}{\textwidth}{5cm}
+        \onslide*<2>{
+        \begin{exampleblock}{Observation}
+            \begin{itemize}
+                \item Unique equilibria in $U$ is $\eq{x}$ with $\eq{x}^i = (0.5, 0.5)$
+                \item Unique equlibiria in $U'$ is $\eq{a} = (\alpha, \alpha)$
+            \end{itemize}
+        \end{exampleblock}}
+        \onslide*<3-6>{
+        \begin{proof}[Suppose $f$ exists]
+            \begin{itemize}
+                \item<3-> $f$ assigns $x^i(\alpha) > 0$ in both $U$ and $U'$
+                \item<4-> We eventually reach the state $s = (\eq{a}, ..., \eq{a})$ in both games
+                \item<5-> $f^1(s)(\alpha)$ should then be close to the unique Nash Equilibrium
+                \item<6 | alert@6> Contradicts uncoupledness!
+            \end{itemize}
+        \end{proof}}
+    \end{overlayarea}
+\end{frame}
+
+
+% note about the empirical distribution?
 
 \section{Memory}
+
+\begin{frame}
+    \frametitle{But...}
+    \begin{center}
+        What about if players had arbitrary \textbf{memories}?
+    \end{center} 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Memory}
+    \framesubtitle{No Continuity Restriction}
+    \begin{definition}
+        A player's strategy $f^i$ has finite $R$-memory if it can be implemented by a finite-state 
+        automaton in $|A|^R$ states.
+    \end{definition}
+    \pause
+    \begin{theorem}
+        For every $\epsilon > 0$ there exists an uncoupled, $R$-memory,
+        stationary strategy mapping that guarantees the
+        almost sure convergence of the behavior probabilities to a Nash $\epsilon$-equilibrium $\eq{x}$.
+    \end{theorem}
+\end{frame}
+
+% This is where stuff gets really interesting
+
+\begin{frame}
+    \frametitle{Proof}
+    \framesubtitle{Buckle in}
+
+    \begin{definition}
+    \end{definition}
+\end{frame}
 
 \section{Closing}
  

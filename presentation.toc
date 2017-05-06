@@ -1,15 +1,4 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Models \& Concepts}{6}{0}{2}
-\beamer@subsectionintoc {2}{1}{Static Setup}{7}{0}{2}
-\beamer@subsectionintoc {2}{2}{Dynamic Setup \& History of Play}{11}{0}{2}
-\beamer@sectionintoc {3}{Pure Equilibria}{14}{0}{3}
-\beamer@subsectionintoc {3}{1}{The Bad News}{15}{0}{3}
-\beamer@subsectionintoc {3}{2}{Not All Is Lost}{22}{0}{3}
-\beamer@sectionintoc {4}{Mixed Equilibria}{23}{0}{4}
-\beamer@subsectionintoc {4}{1}{Distributions of Play}{24}{0}{4}
-\beamer@subsectionintoc {4}{2}{Convergence of Marginal Distributions}{24}{0}{4}
-\beamer@subsectionintoc {4}{3}{Convergence of Joint Distributions}{24}{0}{4}
-\beamer@sectionintoc {5}{Behavior Probabilities}{24}{0}{5}
-\beamer@sectionintoc {6}{Memory}{25}{0}{6}
-\beamer@sectionintoc {7}{Closing}{26}{0}{7}
+\beamer@sectionintoc {2}{Recall}{11}{0}{2}
+\beamer@sectionintoc {3}{Memory}{31}{0}{3}

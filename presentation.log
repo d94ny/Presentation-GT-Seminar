@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 MAY 2017 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 MAY 2017 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1138,11 +1138,13 @@ Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 61.
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./eth_l
-ogo_kurz_pos_13.pdf>] (./presentation.toc)
+ogo_kurz_pos_13.pdf>]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 79.
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 63.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 79.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [2
 
@@ -1154,101 +1156,117 @@ Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 79.
  [3
 
 ]
-File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
-
-<use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 79.
-(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
- [4
-
-]
-File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
- <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 87.
-(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
- [5
-
-]
-(./presentation.toc)
-File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
- <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 89.
-(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
- [6
-
-]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 105.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 103.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 105.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 103.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 105
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 103
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 105
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 103
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 105.
+(Font)              <10.95> on input line 103.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 105.
+(Font)              <8> on input line 103.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 105.
-LaTeX Font Info:    Try loading font information for U+msa on input line 105.
+(Font)              <6> on input line 103.
+LaTeX Font Info:    Try loading font information for U+msa on input line 103.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 105.
+LaTeX Font Info:    Try loading font information for U+msb on input line 103.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 105.
+(Font)              <10> on input line 103.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 103.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 103.
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 105.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 103.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [4
+
+]
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+ <use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 103.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [5
+
+]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 146--146
+[]  
+ []
+
+
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 146--146
+[]  
+ []
+
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 146.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [6
+
+]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 146--146
+[]  
+ []
+
+
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 146--146
+[]  
+ []
+
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 146.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [7
 
 ]
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
  <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 120.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 172.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [8
 
 ]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 139.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 139.
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 139.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 172.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [9
 
 ]
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
  <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 139.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 182.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [10
 
@@ -1256,144 +1274,230 @@ Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 139.
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 160.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 272.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [11
 
 ]
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
  <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 160.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 272.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [12
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 287.
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 174.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 287.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [13
 
-] (./presentation.toc)
+]
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
-
-<use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 176.
+ <use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 287.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [14
 
 ]
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
- <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 185.
+
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [15
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 209.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 209.
-File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 344--344
+|[]  
+ []
 
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 209.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [16
 
 ]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 344--344
+|[]  
+ []
+
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
- <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 209.
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [17
 
 ]
-Overfull \hbox (7.30008pt too wide) in paragraph at lines 252--252
-[]  
- []
-
-
-Overfull \hbox (7.30008pt too wide) in paragraph at lines 252--252
-[]  
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 344--344
+|[]  
  []
 
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 252.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [18
 
 ]
-Overfull \hbox (7.30008pt too wide) in paragraph at lines 252--252
-[]  
- []
-
-
-Overfull \hbox (7.30008pt too wide) in paragraph at lines 252--252
-[]  
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 344--344
+|[]  
  []
 
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 252.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [19
 
 ]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 344--344
+|[]  
+ []
+
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
- <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 278.
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [20
 
 ]
-File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 344--344
+|[]  
+ []
 
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 278.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [21
 
 ]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 344--344
+|[]  
+ []
+
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
- <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 289.
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 344.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [22
 
 ]
-(./presentation.toc)
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
  <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 294.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 351.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [23
 
-] (./presentation.toc)
+]
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 360.
+
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 299.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 360.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [24
 
-] (./presentation.toc)
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 402.
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
-
-<use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 301.
+ <use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 402.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
  [25
 
-] (./presentation.toc)
+]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 402--402
+|[]  
+ []
+
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 402.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [26
+
+]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 402--402
+|[]  
+ []
+
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 402.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [27
+
+]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 402--402
+|[]  
+ []
+
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 402.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [28
+
+]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 402--402
+|[]  
+ []
+
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 402.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [29
+
+]
+Overfull \hbox (7.30008pt too wide) in paragraph at lines 402--402
+|[]  
+ []
+
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 402.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [30
+
+]
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+ <use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 414.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [31
+
+]
 File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
 
 <use eth_logo_kurz_pos_13.pdf>
-Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 303.
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 429.
 (pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
- [26
+ [32
+
+]
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+ <use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 429.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [33
+
+]
+File: eth_logo_kurz_pos_13.pdf Graphic file (type pdf)
+
+<use eth_logo_kurz_pos_13.pdf>
+Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 439.
+(pdftex.def)             Requested size: 36.41953pt x 5.91705pt.
+ [34
 
 ]
 \tf@nav=\write6
@@ -1405,23 +1509,23 @@ Package pdftex.def Info: eth_logo_kurz_pos_13.pdf used on input line 303.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 443.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 443.
  ) 
 Here is how much of TeX's memory you used:
- 23358 strings out of 493089
- 466379 string characters out of 6134842
- 557242 words of memory out of 5000000
- 26210 multiletter control sequences out of 15000+600000
- 78742 words of font info for 69 fonts, out of 8000000 for 9000
+ 23318 strings out of 493089
+ 465581 string characters out of 6134842
+ 560213 words of memory out of 5000000
+ 26172 multiletter control sequences out of 15000+600000
+ 91448 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,66p,392b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,87p,392b,867s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 15/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2015/texmf-d
@@ -1429,22 +1533,25 @@ ist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2015/texmf-dist/fonts/type
 1/public/lm/lmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/l
 m/lmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmmi12.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/lm/lmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/lm/lmss8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss
-9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (26 pages, 380745 bytes).
+cal/texlive/2015/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/lm/lmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/lm/lmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/lm/lmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy6.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on presentation.pdf (34 pages, 461384 bytes).
 PDF statistics:
  324 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 246 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

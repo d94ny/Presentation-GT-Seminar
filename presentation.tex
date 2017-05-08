@@ -7,6 +7,7 @@
 %\usepackage[utf8]{inputenc}
 \usepackage{subfig}
 \usepackage{amssymb,enumerate,tikz, tkz-berge}
+\usepackage{pifont}
 \usetikzlibrary{automata, positioning}
 %\usepackage{sgame}
 \usepackage{sgamevar}
@@ -34,6 +35,8 @@
 \setbeamercolor*{block title example}{fg=white, bg=eth3}
 \setbeamercolor*{block title exampleblock}{fg=white, bg=eth3}
 \addtobeamertemplate{proof begin}{\setbeamercolor{block title}{fg=white, bg=eth9}}{}
+\newcommand{\cmark}{\textbf{\color{eth2}\ding{51}}}%
+\newcommand{\xmark}{\textbf{\color{eth7}\ding{55}}}%
  
  
 % ===========================================================
@@ -265,7 +268,7 @@
     \end{definition}
     \pause
     \begin{theorem}
-        There exist uncoupled, 2-recall, stationary strategy mappings that
+        There exist uncoupled, \textbf{2}-recall, stationary strategy mappings that
         guarantee almost sure convergence to
         pure Nash equilibria  in every game where such equilibria exist.
     \end{theorem}
@@ -367,16 +370,16 @@
         \subfloat[$U = (u^1, u^2)$]{
 		    \begin{game}{2}{2}
     	 		\>  $\alpha$ \>  $\beta$ \\
-    			$\alpha$    \>  $1, 0$ \> $0, 1$\\
-    			$\beta$      \>  $0, 1$ \> $1, 0$\\
+                $\alpha$    \>  ${\color{eth7}1}, 0$ \> ${\color{eth7}0}, 1$\\
+                $\beta$      \>  ${\color{eth7}0}, 1$ \> ${\color{eth7}1}, 0$\\
             \end{game}
 		}
 		\qquad\qquad\qquad
         \subfloat[$U' = (u^1, \bar{u}^2)$]{
 		    \begin{game}{2}{2}
     	 				\>  $\alpha$ \>  $\beta$ \\
-    			$\alpha$    \>  $1, 1$ \> $0, 0$\\
-    			$\beta$      \>  $0, 1$ \> $1, 0$\\
+                $\alpha$    \>  ${\color{eth7}1}, 1$ \> ${\color{eth7}0}, 0$\\
+                $\beta$      \>  ${\color{eth7}0}, 1$ \> ${\color{eth7}1}, 0$\\
             \end{game}
         }
     \end{figure}
@@ -432,7 +435,7 @@
 
 \begin{frame}
     \frametitle{Proof}
-    \framesubtitle{Buckle in}
+    \framesubtitle{Buckle up}
 
     \begin{exampleblock}{Construction 1/2}
         % remove the 2 here
@@ -506,6 +509,63 @@
     \end{exampleblock}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Proof}
+    \begin{exampleblock}{Observation}
+        Once in Mode II each player will play the same mixed action $z^i$ forever.
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Proof}
+    \begin{proof}[When do we reach Mode II?\nopunct]
+        \begin{itemize}
+            \item<3-> For $\tilde{s} = (a_0, s)$ to be $K$-periodic, first $s$ has to be
+            \item<5-> Since $s' = (a_{1}, ..., a_{2K}, \bar{a})$ we get $K$-periodicity only if $\bar{a} = a_1$
+            \item<7- | alert@7> We enter Mode II when $z$ is an $\epsilon$-Equilibria! 
+                \alt<8>{\qedhere}{\phantom\qedhere}
+        \end{itemize}
+    \end{proof}
+    \pause
+    \begin{exampleblock}{Mode I ($\tilde{s}$ not $K$-periodic)}
+        \begin{itemize}
+            \item if $s$ is $K$-periodic and 
+                \begin{itemize}
+                    \item \textbf<6>{$z^i$ is a $\epsilon$-best reply to $z^{-i}$}
+                        he \textbf<5>{continues his periodic play}
+                    \item otherwise he breaks his periodic play
+                \end{itemize}
+            \item if $s$ is not $K$-periodic player $i$ \textbf<4>{picks a random action $\bar{a}^i$}
+        \end{itemize}
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Memory is pretty cool}
+    \begin{exampleblock}{Memories}
+        Memory is almost identical to Recall as players will always remember the $R$ most recent
+        plays. But once they reach a Nash equilibria this becomes the only memory they hold on to.
+    \end{exampleblock}
+\end{frame}
+
+
 \section{Closing}
+
+\begin{frame}
+    \frametitle{Summary}
+    \Large
+    \begin{figure}
+        \begin{tabular}{ r | c | c | c | c | }
+            \cline{2-5}
+            & \multicolumn{3}{|c|}{Recall} & Memory\\\cline{2-5}
+            & 1 & 2 & R & R\\%\cline{2-5}
+            Pure & \visible<2->{\xmark} & \visible<3->{\cmark} & \visible<3->{\cmark} & \visible<5->{\cmark}\\
+            Mixed & \visible<4->{\xmark} & \visible<4->{\xmark} & \visible<4->{\xmark} & \visible<5->{\cmark}\\\cline{2-5}
+        \end{tabular}
+
+        \medskip
+        \caption{Convergence of uncoupled dynamics}
+    \end{figure}
+\end{frame}
  
 \end{document}
